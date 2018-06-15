@@ -13,13 +13,13 @@ import java.awt.image.IndexColorModel;
  * 
  * @author  Chris Gell
  */
-public class SLIM_single_mol_depoly implements PlugIn {
+public class SLIM_colony implements PlugIn {
     String path = "/image-resources/";
 
     public void run(String arg) {
         if (IJ.versionLessThan("1.43t")) return;
-        //displayJpeg(); 
-        displayTiff(); 
+        displayJpeg(); 
+        //displayTiff(); 
         //displayLut();
         //displayText();
         //runMacro();  	
@@ -27,13 +27,13 @@ public class SLIM_single_mol_depoly implements PlugIn {
 
     //  Loads and displays a JPEG image from a JAR using the getResource() method. 
     // Should also work for GIF and PNG images.
-   /* void displayJpeg() {
+    void displayJpeg() {
         URL url = null;
         try {
-            url = getClass().getResource(path+"buenavista.jpg");
+            url = getClass().getResource(path+"colony.JPG");
             Image image = Toolkit.getDefaultToolkit().getImage(url);            
             // display the image
-            new ImagePlus("San Francisco (JPEG)", image).show();
+            new ImagePlus("colony.JPG", image).show();
         }
         catch (Exception e) {
             String msg = e.getMessage();
@@ -42,9 +42,9 @@ public class SLIM_single_mol_depoly implements PlugIn {
             IJ.showMessage("JAR Demo", msg + "\n \n" + url);
         }
     }
-*/
+
     //  Loads and displays a TIFF from within a JAR file using getResourceAsStream().
-     void displayTiff() {
+   /*  void displayTiff() {
             InputStream is = getClass().getResourceAsStream(path+"mt-depoly.tif");
             //InputStream is2 = getClass().getResourceAsStream(path+"mts-diffusion.tif");
             if (is!=null) {
@@ -55,6 +55,7 @@ public class SLIM_single_mol_depoly implements PlugIn {
                 //if (imp2!=null) imp2.show();
             }
     }
+    */
 /*
     //  Loads a LUT from within a JAR file using getResourceAsStream().
     // Requires ImageJ 1.43t or later.

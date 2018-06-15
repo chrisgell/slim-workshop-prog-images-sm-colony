@@ -7,10 +7,10 @@
     <version>19.2.0</version>
     <relativePath />
   </parent>
-  <artifactId>SLIM_single-molecule-depoly</artifactId>
+  <artifactId>SLIM_single-molecule-colony</artifactId>
   <version>0.1.0-SNAPSHOT</version>
-  <name>Depoly images</name>
-  <description>Image time lapse for sample analysis of depoly data</description>
+  <name>Plate image of colonies</name>
+  <description>For prog course</description>
   <url>https://github.com/chrisgell</url>
   <inceptionYear>2018</inceptionYear>
   <organization>
@@ -36,17 +36,10 @@
   </developers>
   <contributors>
     <contributor>
-      <name>Curtis Rueden</name>
-      <url>https://imagej.net/User:Rueden</url>
+      <name>N/A</name>
+      <url>N/A</url>
       <properties>
-        <id>ctrueden</id>
-      </properties>
-    </contributor>
-    <contributor>
-      <name>Stefan Helfrich</name>
-      <url>https://imagej.net/User:Stelfrich</url>
-      <properties>
-        <id>stelfrich</id>
+        <id>N/A</id>
       </properties>
     </contributor>
   </contributors>
